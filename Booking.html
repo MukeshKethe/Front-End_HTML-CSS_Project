@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="Booking.css">
+</head>
+<body>
+    <h1>Booking</h1>
+    <form action="process_booking.php" method="post">
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="camera">Camera</option>
+            <option value="video-camera">Video Camera</option>
+            <option value="drone">Drone</option>
+            <option value="led-wall">LED Wall</option>
+        </select><br>
+        <label for="date">Booking Date:</label>
+        <input type="date" id="date" name="date" required><br>
+        <label for="details">Additional Details:</label>
+        <textarea id="details" name="details" rows="4" cols="30"></textarea><br>
+        <button type="submit">Book Now</button>
+    </form>
+    <button onclick="location.href='index.html'">Back to Home</button>
+</body>
+</html>
