@@ -103,7 +103,6 @@ p {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     li {
         width: calc(100% / 2 - 30px);
